@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>charCodeAt</title>
+</head>
+<!-- 
+  charCodeAt（index）      通过索引找到字符的 Unicode 编码。这个返回值是 0 - 65535 之间的整数。
+ -->
+<body>
+
+  <p id="demo">单击按钮显示字符串的第一个字符的编码。</p>
+  <button onclick="myFunction()">点我</button>
+  <script>
+    function myFunction() {
+      var str = "HELLO WORLD";
+      var n = str.charCodeAt(0);
+      document.getElementById("demo").innerHTML = n;
+    }
+  </script>
+</body>
+
+</html>

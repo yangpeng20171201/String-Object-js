@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<!-- 
+  search() 方法用于检索字符串中指定的子字符串，或检索与正则表达式相匹配的子字符串。
+如果没有找到任何匹配的子串，则返回 -1。
+ -->
+<body>
+
+  <p id="demo">单击显示查找的位置</p>
+  <button onclick="myFunction()">点我</button>
+  <script>
+    function myFunction() {
+      var str = "Visit Runoob!";
+      var n = str.search("Runoob");
+      document.getElementById("demo").innerHTML = n;
+    }
+  </script>
+</body>
+
+</html>

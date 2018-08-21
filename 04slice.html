@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>slice</title>
+  <!-- slice(start, end) 方法可提取字符串的某个部分，并以新的字符串返回被提取的部分。 -->
+</head>
+
+<body>
+
+  <p id="demo">单击按钮显示截取部分</p>
+  <button onclick="myFunction()">点我</button>
+  <script>
+    // slice（n，m）       从索引n 查找到索引m  但不包括m，slice可以取负值
+    function myFunction() {
+      var str = "Hello world!";
+      var n = str.slice(1, 5);
+      document.getElementById("demo").innerHTML = n;
+    }
+  </script>
+</body>
+
+</html>

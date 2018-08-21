@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>substr</title>
+</head>
+<!-- 
+  substr() 方法可在字符串中抽取从 开始 下标开始的指定数目的字符。
+提示： substr() 的参数指定的是子串的开始位置和长度，因此它可以替代 substring() 和 slice() 来使用。
+在 IE 4 中，参数 start 的值无效。在这个 BUG 中，start 规定的是第 0 个字符的位置。在之后的版本中，此 BUG 已被修正。
+ECMAscript 没有对该方法进行标准化，因此反对使用它。
+注意： substr() 方法不会改变源字符串。
+ -->
+
+<body>
+  <p id="demo">点击按钮截取字符串。</p>
+  <button onclick="myFunction()">点我</button>
+  <script>
+    function myFunction() {
+      var str = "Hello world!";
+      var n = str.substr(2, 3);
+      document.getElementById("demo").innerHTML = n;
+    }
+  </script>
+</body>
+
+</html>

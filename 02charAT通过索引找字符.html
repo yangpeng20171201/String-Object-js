@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>charAT</title>
+  <!-- 通过索引找字符 -->
+</head>
+
+<body>
+  <p id="demo">单击按钮显示字符串的第一个字符。</p>
+  <button onclick="myFunction()">点我</button>
+  <script>
+    function myFunction() {
+      var str = "HELLO WORLD";
+      document.getElementById("demo").innerHTML = str.charAt(0);
+    }
+  </script>
+</body>
+
+</html>

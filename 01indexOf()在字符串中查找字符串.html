@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <p id="p1">Click the button to locate where "locate" first occurs.</p>
+  <p id="p2">0</p>
+  <!-- 如果没找到对应的字符函数返回-1
+lastIndexOf() 方法在字符串末尾开始查找字符串出现的位置。 -->
+  <button onclick="myFunction()">点我</button>
+  <script>
+    function myFunction() {
+      var str = document.getElementById("p1").innerHTML;
+      var n = str.indexOf("locate");
+      // 计算的时候带空格计算的
+      document.getElementById("p2").innerHTML = n + 1;
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>split</title>
+</head>
+<!-- split() 方法用于把一个字符串分割成字符串数组。
+提示： 如果把空字符串 ("") 用作 separator，那么 stringObject 中的每个字符之间都会被分割。
+注意： split() 方法不改变原始字符串。 -->
+<body>
+  <p id="demo">单击按钮显示分割后的数组.</p>
+  <button onclick="myFunction()">点我</button>
+  <script>
+    function myFunction() {
+      var str = "How are you doing today?";
+      var n = str.split(" ");
+      document.getElementById("demo").innerHTML = n;
+    }
+  </script>
+
+</body>
+
+</html>

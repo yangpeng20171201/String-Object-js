@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>match</title>
+  <!-- match() 方法可在字符串内检索指定的值，或找到一个或多个正则表达式的匹配。 -->
+</head>
+
+<body>
+  <p id="demo">单击按钮显示matches</p>
+  <button onclick="myFunction()">点我</button>
+  <script>
+    function myFunction() {
+      var str = "The rain in SPAIN stays mainly in the plain";
+      var n = str.match(/ain/g);
+      // var n=str.match(/ain/gi);      全局查找字符串 "ain"，且不区分大小写:
+      document.getElementById("demo").innerHTML = n;
+    }
+  </script>
+</body>
+
+</html>
